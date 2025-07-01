@@ -20,14 +20,33 @@
     <div class="d-flex justify-content-center align-items-center vh-100 bg-light">
         <div class="card shadow p-0 d-flex flex-row overflow-hidden" style="min-width: 700px; max-width: 900px;">
             <div class="p-4 flex-fill" style="min-width: 350px;">
-                <h2 class="mb-4 text-center fs-4">Dental Clinic Login</h2>
+                <div class="d-flex align-items-center mb-4">
+                    <a href="{{ url('/') }}" class="me-2 text-decoration-none text-secondary" title="Back">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+                        </svg>
+                    </a>
+                    <h2 class="mb-0 text-center flex-grow-1 fs-4">Dental Clinic Register</h2>
+                </div>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" required autofocus>
+                    <div class="mb-2">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required autofocus>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
+                        <label for="no" class="form-label">Contact Number</label>
+                        <input type="text" class="form-control" id="no" name="no" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" name="address" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-2">
                         <label for="password" class="form-label">Password</label>
                         <div class="input-group">
                             <input type="password" class="form-control" id="password" name="password" required>
@@ -39,15 +58,10 @@
                             </span>
                         </div>
                         <small id="passwordHelpBlock" class="form-text text-muted">
-                            Enter your account password to log in to the dental clinic system.
+                            Create a password for your account.
                         </small>
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="remember" name="remember">
-                        <label class="form-check-label" for="remember">Remember me</label>
-                    </div>
-                    <button type="submit" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Login</button>
-                    <a href="{{ route('register') }}" class="btn btn-outline-secondary w-100 border-2 border-secondary focus:border-primary focus:text-primary">Register</a>
+                    <button type="submit" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Register</button>
                 </form>
             </div>
             <div class="d-none d-md-flex align-items-center justify-content-center bg-white flex-fill" style="min-width: 500px;">
