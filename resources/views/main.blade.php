@@ -19,7 +19,7 @@
     <div class="d-flex justify-content-center align-items-center vh-100 bg-light">
         <div class="card shadow p-0 d-flex flex-row overflow-hidden" style="min-width: 700px; max-width: 900px;">
             <div class="p-4 flex-fill" style="min-width: 350px;">
-                <h2 class="mb-4 text-center fs-3">Dental Clinic Login</h2>
+                <h2 class="mb-4 text-center fs-4">Dental Clinic Login</h2>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="mb-3">
