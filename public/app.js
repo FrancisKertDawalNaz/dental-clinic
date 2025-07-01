@@ -1,4 +1,6 @@
+
 document.addEventListener('DOMContentLoaded', function () {
+    // Login password toggle
     const passwordInput = document.getElementById('password');
     const togglePassword = document.getElementById('togglePassword');
     const eyeIcon = document.getElementById('eyeIcon');
@@ -10,6 +12,19 @@ document.addEventListener('DOMContentLoaded', function () {
             isShown = !isShown;
             passwordInput.type = isShown ? 'text' : 'password';
             eyeIcon.innerHTML = isShown ? eyeSlash : eye;
+        });
+    }
+
+    // Register modal password toggle
+    const registerPasswordInput = document.getElementById('register_password');
+    const toggleRegisterPassword = document.getElementById('toggleRegisterPassword');
+    const registerEyeIcon = document.getElementById('registerEyeIcon');
+    let isRegisterShown = false;
+    if (registerPasswordInput && toggleRegisterPassword && registerEyeIcon) {
+        toggleRegisterPassword.addEventListener('click', function () {
+            isRegisterShown = !isRegisterShown;
+            registerPasswordInput.type = isRegisterShown ? 'text' : 'password';
+            registerEyeIcon.innerHTML = isRegisterShown ? eyeSlash : eye;
         });
     }
 });
