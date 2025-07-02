@@ -24,7 +24,7 @@
             <!-- Notification Icon -->
             <li class="nav-item dropdown">
                 <a class="nav-link position-relative" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span style="font-size: 1.3rem;">🔔</span>
+                    <i class="bi bi-bell" style="font-size: 1.3rem; color: #fff;"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.7rem;">3</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" style="min-width: 300px;">
@@ -40,7 +40,7 @@
             <!-- Messages Icon (Optional) -->
             <li class="nav-item position-relative">
                 <a class="nav-link" href="#">
-                    <span style="font-size: 1.3rem;">💬</span>
+                    <i class="bi bi-chat-dots" style="font-size: 1.3rem; color: #fff;"></i>
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 0.7rem;">1</span>
                 </a>
             </li>
