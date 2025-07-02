@@ -56,7 +56,7 @@
                         <input type="checkbox" class="form-check-input" id="remember" name="remember">
                         <label class="form-check-label" for="remember">Remember me</label>
                     </div>
-                    <button type="submit" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Login</button>
+                    <a href="{{ url('patient/home') }}" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Login</a>
                     <button type="button" class="btn btn-outline-secondary w-100 border-2 border-secondary focus:border-primary focus:text-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
                 </form>
             </div>

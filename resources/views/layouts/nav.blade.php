@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-3">
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm px-3" style="background-color: #ADEED9;">
     <div class="container-fluid">
         <!-- Clinic Logo/Name -->
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -6,10 +6,19 @@
             <span class="fw-bold">Dental Clinic</span>
         </a>
 
-        <!-- Optional Search Bar -->
-        <form class="d-none d-md-flex mx-auto w-50">
-            <input class="form-control" type="search" placeholder="Search services, dentists, appointments..." aria-label="Search">
-        </form>
+        <!-- Optional Search Bar with Icon -->
+        <div class="d-none d-md-flex flex-grow-1 justify-content-center">
+            <form class="w-50">
+                <div class="input-group">
+                    <span class="input-group-text bg-white border-end-0" style="font-size: 1.1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.442 1.398a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+                        </svg>
+                    </span>
+                    <input class="form-control border-start-0" type="search" placeholder="Search services, dentists, appointments..." aria-label="Search" style="box-shadow:none;">
+                </div>
+            </form>
+        </div>
 
         <ul class="navbar-nav ms-auto align-items-center gap-2">
             <!-- Notification Icon -->
