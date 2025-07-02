@@ -70,3 +70,20 @@ document.getElementById('loginBtn').addEventListener('click', function() {
                 }
             }, 100); // 30ms * 20 = 600ms, adjust for speed
         });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    if (calendarEl) {
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            height: 650,
+            headerToolbar: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            },
+            events: [] // You can populate this with your events
+        });
+        calendar.render();
+    }
+});

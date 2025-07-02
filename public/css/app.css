@@ -1,1 +1,13 @@
+/* Fix for FullCalendar numbers not showing */
+#calendar,
+#calendar .fc {
+  background: #fff !important;
+  color: #222 !important;
+}
+#calendar .fc-daygrid-day-number,
+#calendar .fc-col-header-cell-cushion {
+  color: #222 !important;
+  font-weight: 500;
+  font-size: 1rem;
+}
 
