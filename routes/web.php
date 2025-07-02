@@ -19,7 +19,7 @@ Route::get('patient/home', function () {
     return view('patient.home');
 })->name('patient.home');
 
-Route::get('/logout', function () {
+Route::post('/logout', function () {
     Auth::logout();
     return redirect('/');
 })->name('logout');

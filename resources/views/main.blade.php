@@ -139,7 +139,7 @@
                         <div class="progress w-100" style="height: 8px;">
                             <div id="loadingBar" class="progress-bar bg-success" role="progressbar" style="width: 0%"></div>
                         </div>
-                        <div class="mt-3 fw-bold text-dark">Loading... Please wait</div>
+                        <div class="mt-3 fw-bold text-white">Loading... Please wait</div>
                     </div>
                 </div>
             </div>

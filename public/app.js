@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const logoutBtn = document.getElementById('logoutBtn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (typeof Swal !== 'undefined') {
+                Swal.fire({
+                    title: 'Are you sure you want to logout?',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, logout'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.getElementById('logoutForm').submit();
+                    }
+                });
+            } else {
+                if (confirm('Are you sure you want to logout?')) {
+                    document.getElementById('logoutForm').submit();
+                }
+            }
+        });
+    }
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     // Login password toggle
@@ -42,5 +68,5 @@ document.getElementById('loginBtn').addEventListener('click', function() {
                     clearInterval(interval);
                     window.location.href = "/patient/home";
                 }
-            }, 60); // 30ms * 20 = 600ms, adjust for speed
+            }, 100); // 30ms * 20 = 600ms, adjust for speed
         });

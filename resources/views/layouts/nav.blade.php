@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <!-- Clinic Logo/Name -->
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <span class="me-2" style="font-size: 1.5rem;">🏥</span>
-            <span class="fw-bold">Dental Clinic</span>
+            <img src="{{ asset('images/logo.png') }}" alt="Dental Clinic Logo" style="height: 32px; width: 32px;" class="me-2">
+            <span class="fw-bold text-white">Dental Clinic</span>
         </a>
 
         <!-- Optional Search Bar with Icon -->
