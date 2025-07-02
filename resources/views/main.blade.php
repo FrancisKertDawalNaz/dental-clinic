@@ -56,7 +56,7 @@
                         <input type="checkbox" class="form-check-input" id="remember" name="remember">
                         <label class="form-check-label" for="remember">Remember me</label>
                     </div>
-                    <a href="{{ url('patient/home') }}" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Login</a>
+                    <button id="loginBtn" type="button" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Login</button>
                     <button type="button" class="btn btn-outline-secondary w-100 border-2 border-secondary focus:border-primary focus:text-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
                 </form>
             </div>
@@ -127,9 +127,26 @@
             </div>
         </div>
 
+
+        <!-- Spinner Modal -->
+        <div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0 shadow-none">
+                    <div class="modal-body d-flex flex-column align-items-center justify-content-center p-5">
+                        <div class="spinner-border text-success mb-3" style="width: 4rem; height: 4rem;" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="progress w-100" style="height: 8px;">
+                            <div id="loadingBar" class="progress-bar bg-success" role="progressbar" style="width: 0%"></div>
+                        </div>
+                        <div class="mt-3 fw-bold text-dark">Loading... Please wait</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script src="/app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>

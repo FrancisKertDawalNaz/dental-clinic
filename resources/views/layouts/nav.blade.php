@@ -52,11 +52,9 @@
                     <span>Patient Name</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                    <li><a class="dropdown-item" href="#">View Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Account Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Change Password</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-person me-2"></i>View Profile</a></li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-gear me-2"></i>Account Settings</a></li>
+                    <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-key me-2"></i>Change Password</a></li>
                 </ul>
             </li>
         </ul>

@@ -28,3 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.getElementById('loginBtn').addEventListener('click', function() {
+            var loadingModal = new bootstrap.Modal(document.getElementById('loadingModal'));
+            var progressBar = document.getElementById('loadingBar');
+            loadingModal.show();
+            let percent = 0;
+            progressBar.style.width = '0%';
+            var interval = setInterval(function() {
+                percent += 5;
+                progressBar.style.width = percent + '%';
+                if (percent >= 100) {
+                    clearInterval(interval);
+                    window.location.href = "/patient/home";
+                }
+            }, 60); // 30ms * 20 = 600ms, adjust for speed
+        });
