@@ -1,5 +1,5 @@
 <nav class="d-flex flex-column bg-white shadow-sm p-3 vh-100" style="min-width: 200px; position: fixed; top: 70px; left: 0; z-index: 1020;">
-    <h4 class="mb-3 text-center" style="font-weight: 500;">Patient Menu</h4>
+    <h4 class="mb-3 text-center" style="font-weight: 500; color: #FFB823;">Patient Menu</h4>
     <ul class="nav nav-pills flex-column gap-1">
         <li class="nav-item">
             <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
@@ -53,7 +53,7 @@
     .sidebar-link:hover,
     .sidebar-link:focus {
         background: #ADEED9;
-        color: #222 !important;
+        color: #FFB823 !important;
     }
 
     .sidebar-link.active {

@@ -24,8 +24,8 @@
             <!-- Notification Icon -->
             <li class="nav-item dropdown">
                 <a class="nav-link position-relative" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-bell" style="font-size: 1.3rem; color: #fff;"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.7rem;">3</span>
+                    <i class="bi bi-bell" style="font-size: 1.3rem; color: #FFB823;"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.5rem;">3</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" style="min-width: 300px;">
                     <li class="dropdown-header">Notifications</li>
@@ -40,8 +40,8 @@
             <!-- Messages Icon (Optional) -->
             <li class="nav-item position-relative">
                 <a class="nav-link" href="#">
-                    <i class="bi bi-chat-dots" style="font-size: 1.3rem; color: #fff;"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 0.7rem;">1</span>
+                    <i class="bi bi-chat-dots" style="font-size: 1.3rem; color: #FFB823;"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 0.5rem;">1</span>
                 </a>
             </li>
 
@@ -49,7 +49,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="https://ui-avatars.com/api/?name=Patient+Name&background=ADEED9&color=222&rounded=true&size=32" alt="Profile" class="rounded-circle me-2" width="32" height="32">
-                    <span>Patient Name</span>
+                    <span class="text-white" >Patient Name</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
                     <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-person me-2"></i>View Profile</a></li>

@@ -8,7 +8,7 @@
                 @include('layouts.sidebar')
             </div>
             <div class="col-md-9 p-4">
-                <h2 class="mb-4">Welcome to Your Dashboard</h2>
+                <h2 class="mb-5" style="font-weight: 100; font-size: 1.5rem;">Welcome to Your Dashboard</h2>
                 <!-- Add more dashboard widgets/content here -->
             </div>
         </div>
