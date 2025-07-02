@@ -2,12 +2,12 @@
     <h4 class="mb-3 text-center" style="font-weight: 500; color: #FFB823;">Patient Menu</h4>
     <ul class="nav nav-pills flex-column gap-1">
         <li class="nav-item">
-            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
+            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.home') }}" style="font-weight: 100;">
                 <span class="me-2"><i class="bi bi-house-door"></i></span> Dashboard
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
+            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.appointments') }}" style="font-weight: 100;">
                 <span class="me-2"><i class="bi bi-calendar-event"></i></span> My Appointments
             </a>
         </li>

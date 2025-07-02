@@ -23,3 +23,7 @@ Route::post('/logout', function () {
     Auth::logout();
     return redirect('/');
 })->name('logout');
+
+Route::get('/patient/appointments', function () {
+    return view('patient.appointment');
+})->name('patient.appointments');
