@@ -1,3 +1,38 @@
+// Sidebar Billing dropdown toggle
+document.addEventListener('DOMContentLoaded', function() {
+    var billingToggle = document.getElementById('billingToggle');
+    var billingSubmenu = document.getElementById('billingSubmenu');
+    var billingArrow = document.getElementById('billingArrow');
+    if (billingToggle && billingSubmenu && billingArrow) {
+        billingToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (billingSubmenu.style.display === 'none') {
+                billingSubmenu.style.display = 'block';
+                billingArrow.innerHTML = '<i class="bi bi-chevron-up"></i>';
+            } else {
+                billingSubmenu.style.display = 'none';
+                billingArrow.innerHTML = '<i class="bi bi-chevron-down"></i>';
+            }
+        });
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var servicesToggle = document.getElementById('servicesToggle');
+    var servicesSubmenu = document.getElementById('servicesSubmenu');
+    var servicesArrow = document.getElementById('servicesArrow');
+    if (servicesToggle && servicesSubmenu && servicesArrow) {
+        servicesToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (servicesSubmenu.style.display === 'none') {
+                servicesSubmenu.style.display = 'block';
+                servicesArrow.innerHTML = '<i class="bi bi-chevron-up"></i>';
+            } else {
+                servicesSubmenu.style.display = 'none';
+                servicesArrow.innerHTML = '<i class="bi bi-chevron-down"></i>';
+            }
+        });
+    }
+});
 document.addEventListener('DOMContentLoaded', function() {
     const logoutBtn = document.getElementById('logoutBtn');
     if (logoutBtn) {
@@ -70,20 +105,3 @@ document.getElementById('loginBtn').addEventListener('click', function() {
                 }
             }, 100); // 30ms * 20 = 600ms, adjust for speed
         });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    if (calendarEl) {
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth',
-            height: 650,
-            headerToolbar: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
-            },
-            events: [] // You can populate this with your events
-        });
-        calendar.render();
-    }
-});

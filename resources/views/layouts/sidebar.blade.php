@@ -1,4 +1,4 @@
-<nav class="d-flex flex-column bg-white shadow-sm p-3 vh-100" style="min-width: 200px; position: fixed; top: 70px; left: 0; z-index: 1020;">
+<nav class="d-flex flex-column bg-white shadow-sm p-3 vh-100" style="min-width: 250px; position: fixed; top: 70px; left: 0; z-index: 1020;">
     <h4 class="mb-3 text-center" style="font-weight: 500; color: #FFB823;">Patient Menu</h4>
     <ul class="nav nav-pills flex-column gap-1">
         <li class="nav-item">
@@ -11,24 +11,43 @@
                 <span class="me-2"><i class="bi bi-calendar-event"></i></span> My Appointments
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
-                <span class="me-2"><i class="bi bi-clipboard2-plus"></i></span> Services / Book Appointment
-            </a>
+        <li class="nav-item" style="margin-bottom: 2px;">
+            <div style="border-radius: 8px;">
+                <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" id="servicesToggle" style="font-weight: 100; background: transparent; color: #222; cursor: pointer;">
+                    <span class="me-2"><i class="bi bi-clipboard2-plus"></i></span> Services
+                    <span class="ms-auto" id="servicesArrow"><i class="bi bi-chevron-down"></i></span>
+                </a>
+                <div class="ps-4" id="servicesSubmenu" style="border-radius: 0 0 8px 8px; display: none;">
+                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100; padding-left: 0;">
+                        <i class="bi bi-calendar-plus me-2"></i> Book Appointment
+                    </a>
+                </div>
+            </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
-                <span class="me-2"><i class="bi bi-journal-medical"></i></span> Dental History
-            </a>
+        <li class="nav-item" style="margin-bottom: 2px;">
+            <div style="border-radius: 8px;">
+                <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" id="billingToggle" style="font-weight: 100; background: transparent; color: #222; cursor: pointer;">
+                    <span class="me-2"><i class="bi bi-credit-card"></i></span> Billing
+                    <span class="ms-auto" id="billingArrow"><i class="bi bi-chevron-down"></i></span>
+                </a>
+                <div class="ps-4" id="billingSubmenu" style="border-radius: 0 0 8px 8px; display: none;">
+                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100; padding-left: 0;">
+                        <i class="bi bi-receipt me-2"></i> Payment History
+                    </a>
+                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100; padding-left: 0;">
+                        <i class="bi bi-cash-coin me-2"></i> Pay Now
+                    </a>
+                </div>
+            </div>
         </li>
         <li class="nav-item">
             <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
                 <span class="me-2"><i class="bi bi-capsule"></i></span> Prescriptions
             </a>
         </li>
-        <li class="nav-item">
+         <li class="nav-item">
             <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
-                <span class="me-2"><i class="bi bi-credit-card"></i></span> Billing / Payments
+                <span class="me-2"><i class="bi bi-journal-medical"></i></span> Dental History
             </a>
         </li>
         <li>
