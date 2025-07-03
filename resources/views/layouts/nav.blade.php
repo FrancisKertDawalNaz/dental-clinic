@@ -25,7 +25,6 @@
             <li class="nav-item dropdown">
                 <a class="nav-link position-relative" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-bell" style="font-size: 1.3rem; color: #FFB823;"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.5rem;">3</span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown" style="min-width: 300px;">
                     <li class="dropdown-header">Notifications</li>
@@ -43,14 +42,13 @@
             <li class="nav-item position-relative">
                 <a class="nav-link" href="#">
                     <i class="bi bi-chat-dots" style="font-size: 1.3rem; color: #FFB823;"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 0.5rem;">1</span>
                 </a>
             </li>
 
             <!-- Profile Dropdown -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://ui-avatars.com/api/?name={{ urlencode(session('patient_name', 'Patient Name')) }}&background=ADEED9&color=222&rounded=true&size=32" alt="Profile" class="rounded-circle me-2" width="32" height="32">
+                    <img src="https://ui-avatars.com/api/?name={{ urlencode(session('patient_name', 'Patient Name')) }}&background=ADEED9&color=FFB823&rounded=true&size=32" alt="Profile" class="rounded-circle me-2" width="32" height="32">
                     <span class="text-white">
                         {{ session('patient_name', 'Patient Name') }}
                     </span>

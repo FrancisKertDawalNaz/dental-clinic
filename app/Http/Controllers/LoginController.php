@@ -16,13 +16,18 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
         ]);
 
+        // Prevent login if fields are empty (should not happen due to validation, but extra safety)
+        if (empty($validated['email']) || empty($validated['password'])) {
+            return back()->withErrors(['email' => 'Email and password are required'])->withInput();
+        }
+
         $user = Register::where('email', $request->email)->first();
-        if ($user && Hash::check($request->password, $user->password)) {       // Store user info in session
+        if ($user && Hash::check($request->password, $user->password)) {
             $request->session()->put('register_id', $user->id);
             $request->session()->put('register_name', $user->name);
             session(['patient_name' => $user->name]);

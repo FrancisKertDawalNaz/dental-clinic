@@ -41,7 +41,7 @@
         @endif
         <div class="card shadow p-0 d-flex flex-row overflow-hidden" style="min-width: 700px; max-width: 900px;">
             <div class="p-4 flex-fill" style="min-width: 350px; position: relative; z-index: 1;">
-                <h2 class="mb-2 text-center fs-4">Dental Clinic Login</h2>
+                <h2 class="mb-4 text-center fs-4">Dental Clinic Login</h2>
                 <form method="POST" action="{{ route('login.post') }}">
                     @csrf
                     @if($errors->any())
@@ -146,25 +146,24 @@
                 </div>
             </div>
         </div>
-        <!-- Spinner Modal -->
-        <div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+
+        <!-- Centered Loading Modal -->
+        <div class="modal fade" id="centeredLoadingModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-transparent border-0 shadow-none">
+                <div class="modal-content" style="background: rgba(34,34,34,0.85); border-radius: 1rem; border: none; box-shadow: 0 0 32px 0 rgba(0,0,0,0.2);">
                     <div class="modal-body d-flex flex-column align-items-center justify-content-center p-5">
-                        <div class="spinner-border text-white mb-3" style="width: 4rem; height: 4rem;" role="status">
+                        <div class="spinner-border text-light mb-3" style="width: 4rem; height: 4rem;" role="status">
                             <span class="visually-hidden">Loading...</span>
                         </div>
-                        <div class="progress w-100" style="height: 8px;">
-                            <div id="loadingBar" class="progress-bar bg-success" role="progressbar" style="width: 0%"></div>
-                        </div>
-                        <div class="mt-3 fw-bold text-white">Loading... Please wait</div>
+                        <div class="mt-3 fw-bold text-light fs-5">Loading... Please wait</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script src="/app.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- No custom login JS -->
+        <script src="/app.js"></script>
 </body>
 
 </html>
