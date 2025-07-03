@@ -27,3 +27,7 @@ Route::post('/logout', function () {
 Route::get('/patient/appointments', function () {
     return view('patient.appointment');
 })->name('patient.appointments');
+
+Route::get('/patient/book', function () {
+    return view('patient.book');
+})->name('patient.book');

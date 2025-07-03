@@ -18,7 +18,7 @@
                     <span class="ms-auto" id="servicesArrow"><i class="bi bi-chevron-down"></i></span>
                 </a>
                 <div class="ps-4" id="servicesSubmenu" style="border-radius: 0 0 8px 8px; display: none;">
-                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100; padding-left: 0;">
+                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.book') }}" style="font-weight: 100; padding-left: 0;">
                         <i class="bi bi-calendar-plus me-2"></i> Book Appointment
                     </a>
                 </div>
