@@ -147,22 +147,7 @@
             </div>
         </div>
 
-        <!-- Centered Loading Modal -->
-        <div class="modal fade" id="centeredLoadingModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content" style="background: rgba(34,34,34,0.85); border-radius: 1rem; border: none; box-shadow: 0 0 32px 0 rgba(0,0,0,0.2);">
-                    <div class="modal-body d-flex flex-column align-items-center justify-content-center p-5">
-                        <div class="spinner-border text-light mb-3" style="width: 4rem; height: 4rem;" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                        <div class="mt-3 fw-bold text-light fs-5">Loading... Please wait</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- No custom login JS -->
         <script src="/app.js"></script>
 </body>
 
