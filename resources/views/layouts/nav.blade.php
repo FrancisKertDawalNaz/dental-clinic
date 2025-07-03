@@ -12,7 +12,7 @@
                 <div class="input-group">
                     <span class="input-group-text bg-white border-end-0" style="font-size: 1.1rem;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.442 1.398a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zm-5.442 1.398a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
                         </svg>
                     </span>
                     <input class="form-control border-start-0" type="search" placeholder="Search services, dentists, appointments..." aria-label="Search" style="box-shadow:none;">
@@ -32,7 +32,9 @@
                     <li><a class="dropdown-item" href="#">Upcoming appointment tomorrow at 10:00 AM</a></li>
                     <li><a class="dropdown-item" href="#">Prescription ready for pickup</a></li>
                     <li><a class="dropdown-item" href="#">Reminder: Dental cleaning due next week</a></li>
-                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
                     <li><a class="dropdown-item text-center" href="#">View all notifications</a></li>
                 </ul>
             </li>
@@ -48,8 +50,10 @@
             <!-- Profile Dropdown -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://ui-avatars.com/api/?name=Patient+Name&background=ADEED9&color=222&rounded=true&size=32" alt="Profile" class="rounded-circle me-2" width="32" height="32">
-                    <span class="text-white" >Patient Name</span>
+                    <img src="https://ui-avatars.com/api/?name={{ urlencode(session('patient_name', 'Patient Name')) }}&background=ADEED9&color=222&rounded=true&size=32" alt="Profile" class="rounded-circle me-2" width="32" height="32">
+                    <span class="text-white">
+                        {{ session('patient_name', 'Patient Name') }}
+                    </span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
                     <li><a class="dropdown-item d-flex align-items-center" href="#"><i class="bi bi-person me-2"></i>View Profile</a></li>

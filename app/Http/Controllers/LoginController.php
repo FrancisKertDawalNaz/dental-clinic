@@ -22,11 +22,10 @@ class LoginController extends Controller
         ]);
 
         $user = Register::where('email', $request->email)->first();
-        if ($user && Hash::check($request->password, $user->password)) {
-            // Store user info in session
+        if ($user && Hash::check($request->password, $user->password)) {       // Store user info in session
             $request->session()->put('register_id', $user->id);
             $request->session()->put('register_name', $user->name);
-            // Redirect to patient home
+            session(['patient_name' => $user->name]);
             return redirect()->route('patient.home');
         } else {
             return back()->withErrors(['email' => 'Invalid email or password'])->withInput();
