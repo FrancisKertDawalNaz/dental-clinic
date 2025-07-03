@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        // Uncomment if you add these columns to the users table:
+        // 'no',
+        // 'address',
     ];
 
     /**

@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <title>Dental Clinic</title>
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -20,19 +23,36 @@
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100 bg-light" style="background: rgba(255,255,255,0.7); position: relative;">
         <img src="/images/bg1.jpg" alt="Background" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: 0; opacity: 0.5; pointer-events: none;">
+        <!-- SweetAlert Success -->
+        @if(session('success'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Success!',
+                    text: "{{ session('success') }}",
+                    confirmButtonColor: '#ADEED9',
+                    customClass: {
+                        confirmButton: 'btn btn-success'
+                    }
+                });
+            });
+        </script>
+        @endif
         <div class="card shadow p-0 d-flex flex-row overflow-hidden" style="min-width: 700px; max-width: 900px;">
             <div class="p-4 flex-fill" style="min-width: 350px; position: relative; z-index: 1;">
                 <h2 class="mb-2 text-center fs-4">Dental Clinic Login</h2>
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('login.post') }}">
                     @csrf
-                    <div class="mb-1">
-                        <label for="register_role" class="form-label">Role</label>
-                        <select class="form-select" id="register_role" name="role" required>
-                            <option value="patient" selected>Patient</option>
-                            <option value="admin">Admin</option>
-                            <option value="dentist">Dentist</option>
-                        </select>
+                    @if($errors->any())
+                    <div class="alert alert-danger mt-2">
+                        <ul class="mb-0">
+                            @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
                     </div>
+                    @endif
                     <div class="mb-1">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" name="email" required autofocus>
@@ -56,7 +76,7 @@
                         <input type="checkbox" class="form-check-input" id="remember" name="remember">
                         <label class="form-check-label" for="remember">Remember me</label>
                     </div>
-                    <button id="loginBtn" type="button" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Login</button>
+                    <button id="loginBtn" type="submit" class="btn w-100 mb-2" style="background-color: #ADEED9; color: #222; border: none;">Login</button>
                     <button type="button" class="btn btn-outline-secondary w-100 border-2 border-secondary focus:border-primary focus:text-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
                 </form>
             </div>
@@ -83,7 +103,7 @@
                             <form method="POST" action="{{ route('register') }}">
                                 @csrf
                                 <small id="patient" class="mb-1 form-text text-muted">
-                                        For patient only
+                                    For patient only
                                 </small>
                                 <div class="mb-1">
                                     <label for="register_name" class="form-label">Full Name</label>
@@ -126,8 +146,6 @@
                 </div>
             </div>
         </div>
-
-
         <!-- Spinner Modal -->
         <div class="modal fade" id="loadingModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-dialog-centered">

@@ -7,13 +7,16 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/login', function () {
-    return view('main');
-})->name('login');
 
-Route::get('/register', function () {
-    return view('register');
-})->name('register');
+use App\Http\Controllers\LoginController;
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login'])->name('login.post');
+
+
+use App\Http\Controllers\RegisterController;
+
+Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
+Route::post('/register', [RegisterController::class, 'register'])->name('register.post');
 
 Route::get('patient/home', function () {
     return view('patient.home');
