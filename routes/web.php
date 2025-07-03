@@ -30,3 +30,19 @@ Route::get('/patient/appointments', function () {
 Route::get('/patient/book', function () {
     return view('patient.book');
 })->name('patient.book');
+
+Route::get('/patient/payment', function () {
+    return view('patient.payment');
+})->name('patient.payment');
+
+Route::get('/patient/paynow', function () {
+    return view('patient.paynow');
+})->name('patient.paynow');
+
+Route::get('/patient/prescription', function () {
+    return view('patient.prescription');
+})->name('patient.prescription');
+
+Route::get('/patient/dental', function () {
+    return view('patient.dental');
+})->name('patient.dental');

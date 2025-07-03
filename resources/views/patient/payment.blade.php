@@ -9,7 +9,7 @@
                 @include('layouts.sidebar')
             </div>
             <div class="col-md-9 p-4">
-                <h2 class="mb-5" style="font-weight: 100; font-size: 1.5rem;">Welcome to Dental History</h2>
+                <h2 class="mb-5" style="font-weight: 100; font-size: 1.5rem;">Welcome to Your Payment</h2>
                 <!-- Add more dashboard widgets/content here -->
             </div>
         </div>

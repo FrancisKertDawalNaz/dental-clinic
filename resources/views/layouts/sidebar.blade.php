@@ -31,22 +31,22 @@
                     <span class="ms-auto" id="billingArrow"><i class="bi bi-chevron-down"></i></span>
                 </a>
                 <div class="ps-4" id="billingSubmenu" style="border-radius: 0 0 8px 8px; display: none;">
-                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100; padding-left: 0;">
+                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.payment') }}" style="font-weight: 100; padding-left: 0;">
                         <i class="bi bi-receipt me-2"></i> Payment History
                     </a>
-                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100; padding-left: 0;">
+                    <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.paynow') }}" style="font-weight: 100; padding-left: 0;">
                         <i class="bi bi-cash-coin me-2"></i> Pay Now
                     </a>
                 </div>
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
+            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.prescription') }}" style="font-weight: 100;">
                 <span class="me-2"><i class="bi bi-capsule"></i></span> Prescriptions
             </a>
         </li>
          <li class="nav-item">
-            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" style="font-weight: 100;">
+            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.dental') }}" style="font-weight: 100;">
                 <span class="me-2"><i class="bi bi-journal-medical"></i></span> Dental History
             </a>
         </li>
