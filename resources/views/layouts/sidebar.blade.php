@@ -1,4 +1,4 @@
-<nav class="d-flex flex-column bg-white shadow-sm p-3 vh-100" style="min-width: 250px; position: fixed; top: 70px; left: 0; z-index: 1020;">
+<nav class="d-flex flex-column bg-white shadow-sm p-3 vh-100" style="min-width: 260px; position: fixed; top: 70px; left: 0; z-index: 1020;">
     <h4 class="mb-3 text-center" style="font-weight: 500; color: #FFB823;">Patient Menu</h4>
     <ul class="nav nav-pills flex-column gap-1">
         <li class="nav-item">
