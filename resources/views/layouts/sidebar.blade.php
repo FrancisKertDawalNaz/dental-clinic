@@ -6,11 +6,6 @@
                 <span class="me-2"><i class="bi bi-house-door"></i></span> Dashboard
             </a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.appointments') }}" style="font-weight: 100;">
-                <span class="me-2"><i class="bi bi-calendar-event"></i></span> My Appointments
-            </a>
-        </li>
         <li class="nav-item" style="margin-bottom: 2px;">
             <div style="border-radius: 8px;">
                 <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="#" id="servicesToggle" style="font-weight: 100; background: transparent; color: #222; cursor: pointer;">
