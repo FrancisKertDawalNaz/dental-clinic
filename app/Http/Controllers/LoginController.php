@@ -31,7 +31,8 @@ class LoginController extends Controller
             $request->session()->put('register_id', $user->id);
             $request->session()->put('register_name', $user->name);
             session(['patient_name' => $user->name]);
-            return redirect()->route('patient.home');
+            // Set success message for SweetAlert welcome
+            return redirect()->route('patient.home')->with('success', 'Welcome, ' . $user->name . '!');
         } else {
             return back()->withErrors(['email' => 'Invalid email or password'])->withInput();
         }

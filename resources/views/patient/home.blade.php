@@ -1,3 +1,18 @@
+@if(session('success'))
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Welcome!',
+            text: "{{ session('success') }}",
+            confirmButtonColor: '#ADEED9',
+            customClass: {
+                confirmButton: 'btn btn-success'
+            }
+        });
+    });
+</script>
+@endif
 @extends('layouts.app')
 
 @section('content')

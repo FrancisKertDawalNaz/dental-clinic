@@ -34,11 +34,11 @@
                     <div class="col-md-5 d-flex flex-column justify-content-start">
                         <div class="mb-3">
                             <label for="notes" class="form-label">Notes (optional)</label>
-                            <textarea class="form-control" id="notes" name="notes" rows="5" style="min-width:180px;"></textarea>
+                            <textarea class="form-control" id="notes" name="notes" rows="8" style="min-width:250px;"></textarea>
                         </div>
                     </div>
                 </div>
-                <button type="submit" class="btn" style="background-color: #1B7B6C; color: #fff;">Book Appointment</button>
+                <button type="submit" class="btn" style="background-color: #FFB823; color: #fff;">Book Appointment</button>
             </form>
         </div>
     </div>

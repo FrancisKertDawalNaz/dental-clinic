@@ -23,22 +23,6 @@
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100 bg-light" style="background: rgba(255,255,255,0.7); position: relative;">
         <img src="/images/bg1.jpg" alt="Background" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: 0; opacity: 0.5; pointer-events: none;">
-        <!-- SweetAlert Success -->
-        @if(session('success'))
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Success!',
-                    text: "{{ session('success') }}",
-                    confirmButtonColor: '#ADEED9',
-                    customClass: {
-                        confirmButton: 'btn btn-success'
-                    }
-                });
-            });
-        </script>
-        @endif
         <div class="card shadow p-0 d-flex flex-row overflow-hidden" style="min-width: 700px; max-width: 900px;">
             <div class="p-4 flex-fill" style="min-width: 350px; position: relative; z-index: 1;">
                 <h2 class="mb-4 text-center fs-4">Dental Clinic Login</h2>
