@@ -10,7 +10,7 @@
 
             <div class="col-md-9 p-4 d-flex flex-column"
                  style="margin-left:300px; min-height:unset; height: 535px; background:rgba(255,255,255,0.95); border-radius:10px; box-shadow:0 4px 24px rgba(30,123,108,0.10); overflow-y: auto;">
-                <h2 class="mb-4 text-primary" style="font-weight: 600; font-size: 1.8rem;">
+                <h2 class="mb-4" style="font-weight: 600; font-size: 1.8rem; color: #FFB823;">
                     <i class="bi bi-question-circle-fill me-2" style="color: #FFB823;"></i>Frequently Asked Questions
                 </h2>
 
