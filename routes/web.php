@@ -42,3 +42,15 @@ Route::get('/patient/prescription', function () {
 Route::get('/patient/dental', function () {
     return view('patient.dental');
 })->name('patient.dental');
+
+Route::get('/patient/dental-history', function () {
+    return view('patient.dental-history');
+})->name('patient.dental-history');
+
+Route::get('/patient/clinicinfo', function () {
+    return view('patient.clinicinfo');
+})->name('patient.clinicinfo');
+
+Route::get('/patient/faq', function () {
+    return view('patient.faq');
+})->name('patient.faq');

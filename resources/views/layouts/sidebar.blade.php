@@ -45,6 +45,16 @@
                 <span class="me-2"><i class="bi bi-journal-medical"></i></span> Dental History
             </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.clinicinfo') }}" style="font-weight: 100;">
+                <span class="me-2"><i class="bi bi-geo-alt"></i></span> Clinic Info
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link d-flex align-items-center text-dark sidebar-link" href="{{ route('patient.faq') }}" style="font-weight: 100;">
+                <span class="me-2"><i class="bi bi-question-circle"></i></span> FAQ
+            </a>
+        </li>
         <li>
             <hr class="my-4">
         </li>
